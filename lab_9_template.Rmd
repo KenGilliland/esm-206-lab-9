@@ -1,6 +1,6 @@
 ---
 title: "Lab 9 - Multiple Linear Regression"
-author: "ENTER YOUR NAME HERE"
+author: "Ken Gilliland"
 output:
   html_document: default
 ---
@@ -29,8 +29,21 @@ Use this template to follow along in Lab Week 9. Each code chunk you'll need is 
 
 ```{r packages, include = FALSE}
 
-# a. Load packages 'tidyverse' and 'stargazer':
+# load necessary packages
 
+library(tidyverse)
+library(pwr)
+library(knitr)
+library(kableExtra)
+library(plotly)
+library(ggrepel)
+library(effsize)
+library(pwr)
+library(vcdExtra)
+library(car)
+library(stargazer) # regression table creator
+
+```
 
 
 ```
@@ -40,6 +53,7 @@ Use this template to follow along in Lab Week 9. Each code chunk you'll need is 
 ```{r get_data, include = FALSE}
 
 # a. Read in data as 'homes':
+
 
 
 # b. Filter to only include cities "San Luis Obispo", "Santa Maria-Orcutt", "Atascadero", and "Arroyo Grande", and call this new subset 'homes_sub':
